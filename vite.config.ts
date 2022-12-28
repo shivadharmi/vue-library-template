@@ -5,7 +5,10 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import dts from "vite-plugin-dts";
 
-emptyDir(resolve(__dirname, "dist"));
+const env = process.env.ENV;
+if (env !== "TEST") {
+  emptyDir(resolve(__dirname, "dist"));
+}
 
 export default defineConfig({
   resolve: {
