@@ -1,6 +1,6 @@
 <template>
   <div class="default-import">
-    {{ msg }}
+    <h1>{{ msg }}</h1>
   </div>
 </template>
 

@@ -37,7 +37,7 @@ export default defineConfig({
     dts({
       outputDir: ['dist'],
       // include: ['src/index.ts'],
-      // exclude: ['src/ignore'],
+      exclude: ['src/ignore'],
       // aliasesExclude: [/^@components/],
       staticImport: true,
       skipDiagnostics: false,

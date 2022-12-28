@@ -1,4 +1,4 @@
-import { defineComponent as s, ref as c, openBlock as p, createElementBlock as a, toDisplayString as m } from "vue";
+import { defineComponent as s, ref as c, openBlock as p, createElementBlock as a, createElementVNode as m, toDisplayString as l } from "vue";
 const i = s({
   name: "Image",
   props: {
@@ -7,22 +7,24 @@ const i = s({
       default: "Hello"
     }
   },
-  setup(t) {
+  setup(e) {
     return {
       count: c(0),
-      msg: t.msg
+      msg: e.msg
     };
   }
-}), _ = (t, e) => {
-  const o = t.__vccOpts || t;
-  for (const [n, r] of e)
+}), u = (e, t) => {
+  const o = e.__vccOpts || e;
+  for (const [n, r] of t)
     o[n] = r;
   return o;
-}, f = { class: "default-import" };
-function l(t, e, o, n, r, u) {
-  return p(), a("div", f, m(t.msg), 1);
+}, _ = { class: "default-import" };
+function f(e, t, o, n, r, d) {
+  return p(), a("div", _, [
+    m("h1", null, l(e.msg), 1)
+  ]);
 }
-const d = /* @__PURE__ */ _(i, [["render", l]]);
+const $ = /* @__PURE__ */ u(i, [["render", f]]);
 export {
-  d as Image
+  $ as Image
 };

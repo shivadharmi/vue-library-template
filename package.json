@@ -17,14 +17,15 @@
     }
   },
   "scripts": {
-    "build": "cross-env DEBUG=\"vite-plugin-dts:bundle\" vite build"
+    "build": "cross-env DEBUG=\"vite-plugin-dts:bundle\" vite build",
+    "dev": "vite"
   },
   "dependencies": {
-    "vue": "^3.2.40"
+    "vue": "^3.2.45"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.2.0",
-    "@vitejs/plugin-vue-jsx": "^2.1.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.0",
     "tslib": "^2.4.1",
     "vite": "^4.0.3",
     "vite-plugin-dts": "^1.7.1"
