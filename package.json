@@ -1,0 +1,32 @@
+{
+  "name": "vue-library-template",
+  "version": "0.0.1",
+  "auth": "Siva Sankar Reddy Bogala",
+  "private": true,
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/main.js",
+      "require": "./dist/main.js"
+    }
+  },
+  "scripts": {
+    "build": "cross-env DEBUG=\"vite-plugin-dts:bundle\" vite build"
+  },
+  "dependencies": {
+    "vue": "^3.2.40"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue-jsx": "^2.1.0",
+    "tslib": "^2.4.1",
+    "vite": "^4.0.3",
+    "vite-plugin-dts": "^1.7.1"
+  }
+}
