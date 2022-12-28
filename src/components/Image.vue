@@ -5,22 +5,22 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
-  name: 'Image',
+  // eslint-disable-next-line vue/multi-word-component-names, vue/no-reserved-component-names
+  name: "Image",
   props: {
     msg: {
       type: String,
-      default: 'Hello'
-    }
+      default: "Hello",
+    },
   },
-  setup(props) {
-    const count = ref(0)
+  setup() {
+    const count = ref(0);
     return {
       count,
-      msg:props.msg
-    }
-  }
-})
+    };
+  },
+});
 </script>

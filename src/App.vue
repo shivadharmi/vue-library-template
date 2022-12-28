@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Image from './components/Image.vue';
+import Image from "./components/Image.vue";
 </script>
 
 <template>
-  <Image msg="Hello"/>
+  <Image msg="Hello" />
 </template>
 
 <style scoped>

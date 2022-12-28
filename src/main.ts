@@ -1,3 +1,3 @@
-export { default as Image } from '@components/Image.vue'
+export { default as Image } from "@components/Image.vue";
 
-export type { User } from './types'
+export type { User } from "./types";

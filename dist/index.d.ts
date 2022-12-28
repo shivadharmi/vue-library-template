@@ -13,7 +13,6 @@ declare const Image_2: DefineComponent<{
     };
 }, {
     count: Ref<number>;
-    msg: string;
 }, unknown, {}, {}, ComponentOptionsMixin, ComponentOptionsMixin, {}, string, VNodeProps & AllowedComponentProps & ComponentCustomProps, Readonly<ExtractPropTypes<{
     msg: {
         type: StringConstructor;

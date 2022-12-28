@@ -1,5 +1,5 @@
-import { defineComponent as s, ref as c, openBlock as p, createElementBlock as a, createElementVNode as m, toDisplayString as l } from "vue";
-const i = s({
+import { defineComponent as c, ref as s, openBlock as p, createElementBlock as a, createElementVNode as l, toDisplayString as m } from "vue";
+const i = c({
   name: "Image",
   props: {
     msg: {
@@ -7,21 +7,20 @@ const i = s({
       default: "Hello"
     }
   },
-  setup(e) {
+  setup() {
     return {
-      count: c(0),
-      msg: e.msg
+      count: s(0)
     };
   }
-}), u = (e, t) => {
-  const o = e.__vccOpts || e;
-  for (const [n, r] of t)
-    o[n] = r;
-  return o;
+}), u = (e, o) => {
+  const t = e.__vccOpts || e;
+  for (const [n, r] of o)
+    t[n] = r;
+  return t;
 }, _ = { class: "default-import" };
-function f(e, t, o, n, r, d) {
+function f(e, o, t, n, r, d) {
   return p(), a("div", _, [
-    m("h1", null, l(e.msg), 1)
+    l("h1", null, m(e.msg), 1)
   ]);
 }
 const $ = /* @__PURE__ */ u(i, [["render", f]]);
